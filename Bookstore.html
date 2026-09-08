@@ -133,25 +133,26 @@
     </section>
     <hr>
     <section>
+        <h3> Customer Information:</h3>
         <form>
-            <label> Customer Name: </label>
-            <input type="text" value="obj"> <br>
-            <label> Customer email: </label>
-            <input type="text" placeholder="name@gmail.com"> <br>
-            <label> Customer Phone number: </label>
-            <input type="number"> <br>
-            <input type="checkbox">checkbox
-            <input type="checkbox">checkbox<br>
-            <input type="radio">radio <br>
-            <select>
-                <option>Select The value</option>
-                <option value="option1">Option1</option>
-                <option value="option2">option2</option>
-                <option value="option3">Option3</option>
-            </select>
-            <button>Submit</button>
-            
+            <fieldset>
+                <label> Customer Name: </label><br>
+                <input type="text" value="name" maxlength="5"> <br><br>
 
+                <label> Customer email: </label><br>
+                <input type="email" placeholder="name@gmail.com"> <br><br>
+
+                <label> Customer Phone number: </label><br>
+                <input type="tel" required maxlength="10" minlength="10"> <br><br>
+
+                <label> Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea> <br>
+
+                <label> Customer Phone number: </label><br>
+                <input type="tel" required maxlength="10" minlength="10"> <br><br>
+
+                <button>Submit</button>
+            </fieldset>
         </form>
     </section>
 </body>
