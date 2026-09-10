@@ -134,27 +134,70 @@
     <hr>
     <section>
         <h3> Customer Information:</h3>
-        <form>
+        <form action="customer.html" id="customerinfo" target="_self" >
             <fieldset>
                 <legend> Customer Information </legend>
-                <label> Customer Name: </label><br>
-                <input type="text" value="name" maxlength="5"> <br><br>
+                <label> Customer FName: </label><br>
+                <input type="text" value="names" pattern="[a-zA-Z0-9]{5,10}"> <br><br>
+
+                <label> Customer LName: </label><br>
+                <input type="text" pattern="C.*Z"> <br><br>
 
                 <label> Customer email: </label><br>
                 <input type="email" placeholder="name@gmail.com"> <br><br>
 
                 <label> Customer Phone number: </label><br>
-                <input type="tel" required maxlength="10" minlength="10"> <br><br>
+                <input type="tel" maxlength="10" minlength="10"> <br><br>
 
                 <label> Message:</label><br>
                 <textarea id="message" name="message" rows="4" cols="50"></textarea> <br>
 
-                <label> Customer Phone number: </label><br>
-                <input type="tel" required maxlength="10" minlength="10"> <br><br>
+            </fieldset>
+            <br>
+            <legend><strong> Booking Information </strong></legend><br>
+            <label for="Booking">Booking Data:</label>
+            <input type="date" id="Booking" name="Booking" required><br><br>
 
-                <button>Submit</button>
+            <label for="time"> Booking Time:</label>
+            <input type="time" id="time" name="time" required> <br> <br>
+
+            <label for="Readers"> Readers: </label>
+            <select id="Readers" name="Readers" required>
+                <option value="1">1</option>
+                <option value="2" selected>2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select> <br><br>
+
+            <label>Special Requests:</label> <br>
+            <input type="radio" id="Book_type" name="Book_type" value="Sci-Fi">
+            <label for="Book_type">Sci-Fi</label><br>
+            <input type="radio" id="Book_type" name="Book_type" value="Suspense">
+            <label for="Book_type">Suspense</label>
+            <br><br>
+            <label for="Books"> Books: </label>
+            <select id="Books" name="Books" required>
+                <optgroup Label="Premium Books">
+                    <option value="Zero to One">Zero to One</option>
+                    <option value="Atomic Habits">Atomic Habits</option>
+                    <option value="The Alchemist">The Alchemist</option>
+                </optgroup>
+                <optgroup Label="Regular Books">
+                    <option value="The Great Gatsby">The Great Gatsby</option>
+                    <option value="To Kill a Mockingbird"> To Kill a Mockingbird</option>
+                    <option value="1984">1984</option>
+                </optgroup>
+            </select> <br><br>
+            <label for="photo"> Add a image of Book </label><br>
+            <input type="file" multiple id="photo" name="photo" accept="application/msword"> <br><br>
+
+            <input type="submit" formtarget="#customerinfo" value="Book Now"></input>
             </fieldset>
         </form>
+    </section>
+    <section id="Thanks">
+        <h3> Thanks </h3>
     </section>
 </body>
 
