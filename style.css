@@ -1,0 +1,17 @@
+p {
+    color: orange;
+}
+
+h3 {
+    color: blue;
+}
+
+.header_class {
+    color: white;
+    background-color: darkolivegreen;
+    width: 625px;
+    height: 260px;
+    padding: 31px;
+    margin: 139px;
+    border: 18px;   
+}
