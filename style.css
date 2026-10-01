@@ -8,10 +8,27 @@ h3 {
 
 .header_class {
     color: white;
-    background-color: darkolivegreen;
-    width: 625px;
+    background-color: rgb(26, 88, 24);
+    width: 60%;
     height: 260px;
-    padding: 31px;
-    margin: 139px;
-    border: 18px;   
+    padding: 6%;
+    margin: 10rem;
+    border: 2em solid #e59c0b;
+    
+
+    /* vw  works on screen resolution's 1% */
+    /* vh */
+
+    box-sizing: content-box;
+    /* min-width: 0px;
+    min-height: 0px;
+    min-width: 100%;
+    min-height: 100%; */
+
+    opacity: 0.9;
+    background-image: url(https://thumbs.dreamstime.com/b/evening-bookstore-ambiance-stacks-books-displayed-invitingly-wooden-shelves-cozy-interior-view-open-doors-386644563.jpg);
+}
+
+.heading_title {
+    display: block;
 }
