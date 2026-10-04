@@ -46,7 +46,7 @@ h3 {
     display: inline-block;
 }
 
-/* Psudo element code */
+/* Psudo element  */
 nav a:hover { 
             /* This is State */
             color: red;
