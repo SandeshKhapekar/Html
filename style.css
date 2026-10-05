@@ -59,8 +59,27 @@ section > h2::after {
     /* This is element */
     content: " (📚)";
     margin: 0 0 0 0; 
-    /* margin: left top bottom right */
+    /* margin: top left bottom right */
     padding: 0 0 0 1em solid orange;
     border: 1px solid black;
 
+}
+
+.collection-title {
+    position: sticky;
+    top:0 ;
+}
+
+.collection {
+    position: relative;
+    top: 0;
+}
+.specialoffer {
+    position: absolute;
+    top: 20px;
+    right:20px;
+
+    background-color: yellow;
+    border-radius: 15px;
+    padding: 10px;
 }
