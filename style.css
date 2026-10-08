@@ -82,4 +82,12 @@ section > h2::after {
     background-color: yellow;
     border-radius: 15px;
     padding: 10px;
+    box-shadow: 10px 10px 10px grey;
+}
+
+nav {
+    background-color: grey;
+    color:white;
+    padding: 15px;
+    
 }
