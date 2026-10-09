@@ -150,3 +150,8 @@ div>div {
     border: 10px solid green;
     flex: 1 0 316px;
 }
+
+.grid-items {
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    }
