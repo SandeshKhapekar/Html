@@ -165,6 +165,21 @@ div>div {
 .grid_col {
     grid-column: 2/3;
 }
-.grid_row {
+.grid_row { 
     grid-row: span 2;
 }
+
+.areas {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+        "header header header"
+        "sidebar nav nav"
+        "sidebar content content"
+        "footer footer footer"; 
+}
+.area-header { grid-area: header; }
+.area-sidebar { grid-area: sidebar; }
+.area-content { grid-area: content;}
+.area-nav { grid-area: nav;}
+.area-footer { grid-area: footer;}
