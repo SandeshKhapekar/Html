@@ -8,13 +8,13 @@ p {
     font-size: 1em;
     font-weight: semi-bold;
     line-height: 1.5rem;
-    text-align: justify;
+    text-align: justify; 
     text-decoration: none;
 }
 
 body {
     font-family: 'Georgia', serif;
-    background: var(--bg);
+    background-color:rgb(247, 234, 217);
     color: var(--text);
     line-height: 1.6;
     max-width: 1000px;
@@ -114,6 +114,7 @@ nav {
     background-color: chartreuse;
     color: white;
     padding: 15px;
+    width:100%;
 
 }
 section {
@@ -153,5 +154,17 @@ div>div {
 
 .grid-items {
     display:grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: repeat(2, minmax(200px ,800px)); 
+    grid-template-rows: 200px 100px;
+    justify-content: center ;
     }
+
+    /* justify content */
+    /* justify items */
+
+.grid_col {
+    grid-column: 2/3;
+}
+.grid_row {
+    grid-row: span 2;
+}
